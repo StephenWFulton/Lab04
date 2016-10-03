@@ -1,0 +1,12 @@
+body{
+	background-color: #CCFFFF;
+	font-family: 'Verdana';
+}
+
+p{
+	font-size: 20px;
+}
+
+#total{
+	font-weight: bold;
+}

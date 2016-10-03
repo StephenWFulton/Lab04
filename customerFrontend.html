@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Stephen's 'Running Low on Sleep' Night Owl Emporium</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="formChecker.js"></script>
+	</head>
+	<body>
+		<center>
+			<h1>Stephen's 'Running Low on Sleep and Need to Finish this Project' Night Owl Emporium</h1>
+			<p>Items are listed below with prices. Please choose the number of each item you would like to purchase for each item. Then choose the type of shipping and click 'Submit Order' to process your order and review the receipt.</p>
+			<form id="allInfoMenu" method="post" onsubmit=" return formChecker()" action="customerBackend.php">
+				Email Address: <input id="emailAddr" type="text" name="email">
+				Password: <input id="pass" type="password" name="pass"><br>
+				<h3>Item Menu</h3>
+				<table>
+					<tr>
+						<td>More Time to Finish Project</td>
+						<td>$15</td>
+						<td><input id="timeQuant" type="number" value="0" name="timeQuant"></td>
+					</tr>
+					<tr>
+						<td>More Sleep to Finish Project</td>
+						<td>$20</td>
+						<td><input  id="sleepQuant" type="number" value="0" name="sleepQuant"></td>
+					</tr>
+					<tr>
+						<td>Fewer Distractions</td>
+						<td>$35</td>
+						<td><input  id="distractQuant" type="number" value="0" name="distractQuant"></td>
+					</tr>
+				</table>
+				<h3>Shipping Choices</h3>
+				<input type="radio" checked="checked" value="7" name="ship">7 Days (Free)</input>
+				<input type="radio" value="3" name="ship">3 Days ($5)</input>
+				<input type="radio" value="1" name="ship">Overnight ($50)</input><br><br>
+				<input type="submit">
+			</form>
+		</center>
+	</body>
+</html>
